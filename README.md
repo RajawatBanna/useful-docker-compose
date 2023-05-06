@@ -76,9 +76,37 @@ docker compose up
 - [Homepage](homepage) - A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations.
 - [Homer](homer) - A dead simple static homepage to expose your server services, with an easy yaml configuration and connectivity check.
 - [Dashy](dashy) - Feature-rich homepage for your homelab, with easy YAML configuration.
-- [Homarr](examples/homarr) - A sleek, modern dashboard that puts all of your apps and services at your fingertips.
-- [Flame](examples/flame) - Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
-- [Heimdall](examples/heimdall) - Heimdall is an elegant solution to organise all your web applications.
+- [Heimdall](heimdall) - Heimdall is an elegant solution to organise all your web applications.
+
+### Monitoring
+- [Portainer](portainer) - Portainer is a lightweight management UI which allows you to easily manage your different Docker environments (Docker hosts or Swarm clusters).
+- [Yacht](yacht) - Yacht is a container management UI with a focus on templates and 1-click deployments. 
+- [Dozzle](dozzle) - Dozzle is a small lightweight application with a web based interface to monitor Docker logs. It doesn’t store any log files. It is for live monitoring of your container logs only.
+- [Glances](glances) - Glances containers are availables. You can use it to monitor your server and all your other containers !
+- [Uptimekuma](uptimeKuma) - Uptime Kuma is an easy-to-use self-hosted monitoring tool.
+- [Watchtower](watchtower) - A container-based solution for automating Docker container base image updates.
+- [Changedetection](examples/changedetection) - Self-hosted tool for staying up-to-date with web-site content changes.
+- [Grafana+Loki+Promtail+InfluxDB+Telegraf](examples/grafana-monitoring) - Grafana is the open source analytics & monitoring solution for every database. Combined with other open-source tools like Loki, Promtail, InfluxDB and Telegraf, monitoring data can be aggregated, normalized, filtered, parsed and finally visualized within a web dashboard.
+- [Speedtest-Tracker](examples/speedtest-tracker) - Continuously track your internet speed.
+- [Openspeedtest](examples/openspeedtest) - A free and open-source HTML5 network performance estimation tool written in vanilla JavaScript and only uses built-in web APIs like XHR, HTML, CSS, JS and SVG.
+- [Goaccess](examples/nginx-proxy-manager-goaccess) - Real-time web log analyzer and interactive viewer that visualizes various logs of popular reverse proxies such as Nginx, Nginx Proxy Manager and Traefik.
+- [WatchYourLAN](examples/watchyourlan) - Lightweight network IP scanner with web GUI.
+- [Home Assistant](examples/homeassistant) - Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.
+- [dockcheck-web](examples/dockcheck-web) - A webpage showing available image updates for your running containers.
+
+### Databases
+
+- [PGSQL](pgsqlPgadminDB) - The PostgreSQL object-relational database system provides reliability and data integrity with PgAdmin client.
+- [MYSQL](mysqlPhpMyAdminDB) - MySQL an open-source relational database management system (RDBMS) with Php My Admin client.
+- [MSSQL](mssql) - Microsoft Sql server database.
+- [ORACLE-XE](oracleDB) - Oracle Database XE (21c, 18c, 11g) for everyone! See gvenzl/oracle-free for Oracle Database 23c Free.
+- [MONGO-DB](mongoDB) - MongoDB document databases provide high availability and easy scalability.
+- [SAP HANA](sapHana) - Sap Hana Database.
+
+### Caching 
+
+- [Redis](redis) - Redis (REmote DIctionary Server in full) is a free and open-source, fast, high-performance, and flexible distributed in-memory computing system that can be used from most if not all programming languages.
+
 
 ### Password Management
 - [Vaultwarden](examples/vaultwarden) - Lightweight Bitwarden server API implementation written in Rust. Unlocks paid Bitwarden features such as 2FA.
@@ -86,14 +114,14 @@ docker compose up
 - [Passbolt CE](examples/passbolt) - Passbolt CE open source password manager for teams based on GPG.
 
 ### Reverse Proxies
-- [Traefik](examples/traefik) - Traefik is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease. It supports several backends (Docker, Swarm, Mesos/Marathon, …) to manage its configuration automatically and dynamically.
-- [Nginx Proxy Manager](examples/nginx-proxy-manager) - Nginx Proxy Manager is an easy way to accomplish reverse proxying hosts with SSL termination.
-- [Caddy](examples/caddy) - The Caddy web server is an extensible, cross-platform, open-source web server written in Go. Caddy obtains and renews TLS certificates for your sites automatically.
+- [Traefik](traefik) - Traefik is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease. It supports several backends (Docker, Swarm, Mesos/Marathon, …) to manage its configuration automatically and dynamically.
+- [Nginx Proxy Manager](nginx-proxy-manager) - Nginx Proxy Manager is an easy way to accomplish reverse proxying hosts with SSL termination.
+- [Caddy](caddy) - The Caddy web server is an extensible, cross-platform, open-source web server written in Go. Caddy obtains and renews TLS certificates for your sites automatically.
 - ~~[oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy)~~ - A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.
 
 ### Identity Providers / Single Sign On (SSO) / 2FA
-- [Authelia](examples/authelia) - Authelia is an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO) for your applications via a web portal. It acts as a companion for reverse proxies by allowing, denying, or redirecting requests. Recommended to combine with [Traefik](examples/traefik).
-- [lldap](examples/lldap) - lldap is a lightweight authentication server that provides an opinionated, simplified LDAP interface for authentication. It integrates with many backends, from KeyCloak to Authelia to Nextcloud and more.
+- [Authelia](authelia) - Authelia is an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO) for your applications via a web portal. It acts as a companion for reverse proxies by allowing, denying, or redirecting requests. Recommended to combine with [Traefik](traefik).
+- [lldap](lldap) - lldap is a lightweight authentication server that provides an opinionated, simplified LDAP interface for authentication. It integrates with many backends, from KeyCloak to Authelia to Nextcloud and more.
 - ~~[Authentik](https://goauthentik.io/docs/providers/proxy/forward_auth#traefik)~~ - authentik is an open-source Identity Provider focused on flexibility and versatility. You can use authentik in an existing environment to add support for new protocols. authentik is also a great solution for implementing signup/recovery/etc in your application, so you don't have to deal with it.
 - ~~[Keycloak](https://github.com/keycloak/keycloak)~~ - Keycloak is an open-source Identity and Access Management (IAM) solution for modern applications and services.
 
@@ -108,7 +136,7 @@ docker compose up
 - [AdGuard Home](examples/adguard-home) - AdGuard Home is a network-wide software for blocking ads and tracking.
 - [AdGuard Home Sync](examples/adguard-home-sync) - Synchronize AdGuardHome config to replica instances.
 - [Technitium DNS](examples/technitium-dns) - An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
-- [Pihole](examples/pihole) - Pi-hole is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network.
+- [Pihole](pihole) - Pi-hole is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network.
 - [Cloudflare DDNS](examples/cloudflare-ddns) - Dynamic DNS (DDNS) is a service that keeps the DNS updated with a web property's correct IP address, even if that IP address is constantly being updated.
 
 ### Repository Management, Coding and Automation
@@ -118,19 +146,6 @@ docker compose up
 - [Code-Server](examples/code-server) - VS Code in the browser, hosted on a remote server.
 - [Onedev](examples/onedev) - Self-hosted Git Server with CI/CD and Kanban.
 - [n8n](examples/n8n) - Free and source-available fair-code licensed workflow automation tool. Easily automate tasks across different services.
-
-### Monitoring
-- [Watchtower](examples/watchtower) - A container-based solution for automating Docker container base image updates.
-- [Portainer](examples/portainer-ee) - Portainer is a lightweight management UI which allows you to easily manage your different Docker environments (Docker hosts or Swarm clusters).
-- [Uptimekuma](examples/uptimekuma) - Uptime Kuma is an easy-to-use self-hosted monitoring tool.
-- [Changedetection](examples/changedetection) - Self-hosted tool for staying up-to-date with web-site content changes.
-- [Grafana+Loki+Promtail+InfluxDB+Telegraf](examples/grafana-monitoring) - Grafana is the open source analytics & monitoring solution for every database. Combined with other open-source tools like Loki, Promtail, InfluxDB and Telegraf, monitoring data can be aggregated, normalized, filtered, parsed and finally visualized within a web dashboard.
-- [Speedtest-Tracker](examples/speedtest-tracker) - Continuously track your internet speed.
-- [Openspeedtest](examples/openspeedtest) - A free and open-source HTML5 network performance estimation tool written in vanilla JavaScript and only uses built-in web APIs like XHR, HTML, CSS, JS and SVG.
-- [Goaccess](examples/nginx-proxy-manager-goaccess) - Real-time web log analyzer and interactive viewer that visualizes various logs of popular reverse proxies such as Nginx, Nginx Proxy Manager and Traefik.
-- [WatchYourLAN](examples/watchyourlan) - Lightweight network IP scanner with web GUI.
-- [Home Assistant](examples/homeassistant) - Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.
-- [dockcheck-web](examples/dockcheck-web) - A webpage showing available image updates for your running containers.
 
 ### Tools & Helpers
 - [Network-Multitool](examples/network-multitool) - Multi-arch multitool for container network troubleshooting.
@@ -184,8 +199,8 @@ docker compose up
 - [MinIO](examples/minio) - MinIO is an object storage server, compatible with Amazon S3 cloud storage service, mainly used for storing unstructured data (such as photos, videos, log files, etc.).
 
 ### Publishing, Writing, Blogging, Hosting
+- [WordPress](wordpress) - WordPress is a free and open-source content management system written in hypertext preprocessor language and paired with a MySQL or MariaDB database with supported HTTPS.
 - [Ghost](examples/ghost) - Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.
-- [WordPress](examples/wordpress) - WordPress is a free and open-source content management system written in hypertext preprocessor language and paired with a MySQL or MariaDB database with supported HTTPS.
 - [Nginx + PHP](examples/nginx-php) - Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. Combined with PHP, a general-purpose scripting language geared toward web development, server-side functions can be implemented for the webs.
 - [Overleaf](examples/overleaf) - Overleaf is a collaborative cloud-based LaTeX editor used for writing, editing and publishing scientific documents.
 - [Answer](examples/answer) - An open-source knowledge-based community software. You can use it quickly to build Q&A community for your products, customers, teams, and more.
