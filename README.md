@@ -96,16 +96,28 @@ docker compose up
 
 ### Databases
 
-- [PGSQL](pgsqlPgadminDB) - The PostgreSQL object-relational database system provides reliability and data integrity with PgAdmin client.
-- [MYSQL](mysqlPhpMyAdminDB) - MySQL an open-source relational database management system (RDBMS) with Php My Admin client.
+- [PGSQL](pgsqlPgadminDB) - The PostgreSQL database server with PgAdmin client.
+- [MYSQL](mysqlPhpMyAdminDB) - MySQL database server with Php My Admin client.
 - [MSSQL](mssql) - Microsoft Sql server database.
-- [ORACLE-XE](oracleDB) - Oracle Database XE (21c, 18c, 11g) for everyone! See gvenzl/oracle-free for Oracle Database 23c Free.
-- [MONGO-DB](mongoDB) - MongoDB document databases provide high availability and easy scalability.
+- [ORACLE-XE](oracleDB) - Oracle Database XE (21c, 18c, 11g). See gvenzl/oracle-free for Oracle Database 23c Free.
+- [MONGO-DB](mongoDB) - MongoDB server with client
 - [SAP HANA](sapHana) - Sap Hana Database.
 
 ### Caching 
 
 - [Redis](redis) - Redis (REmote DIctionary Server in full) is a free and open-source, fast, high-performance, and flexible distributed in-memory computing system that can be used from most if not all programming languages.
+
+### Time Management 
+
+- [Traggo](traggo) - Time Management Dashboard (For Both Personal & Proffesional)
+
+### Remotely Accessing Servers in Browser
+
+- [Guacamole](guacamole) - Apache Guacamole is a clientless remote desktop gateway supporting protocols like VNC and RDP. 
+
+### Notes Management 
+
+- [Joplin](joplin) - Better Notes Management Application.
 
 
 ### Password Management
@@ -122,7 +134,7 @@ docker compose up
 ### Identity Providers / Single Sign On (SSO) / 2FA
 - [Authelia](authelia) - Authelia is an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO) for your applications via a web portal. It acts as a companion for reverse proxies by allowing, denying, or redirecting requests. Recommended to combine with [Traefik](traefik).
 - [lldap](lldap) - lldap is a lightweight authentication server that provides an opinionated, simplified LDAP interface for authentication. It integrates with many backends, from KeyCloak to Authelia to Nextcloud and more.
-- ~~[Authentik](https://goauthentik.io/docs/providers/proxy/forward_auth#traefik)~~ - authentik is an open-source Identity Provider focused on flexibility and versatility. You can use authentik in an existing environment to add support for new protocols. authentik is also a great solution for implementing signup/recovery/etc in your application, so you don't have to deal with it.
+- [Authentic](authentic) - authentik is an open-source Identity Provider focused on flexibility and versatility. You can use authentik in an existing environment to add support for new protocols. authentik is also a great solution for implementing signup/recovery/etc in your application, so you don't have to deal with it.
 - ~~[Keycloak](https://github.com/keycloak/keycloak)~~ - Keycloak is an open-source Identity and Access Management (IAM) solution for modern applications and services.
 
 ### Virtual Private Network (VPN)

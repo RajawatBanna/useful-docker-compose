@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  traggo:
+    image: traggo/server:latest
+    container_name: traggo
+    restart: always
+    ports:
+      - 3030:3030
+    environment:
+      TRAGGO_DEFAULT_USER_NAME: "admin"
+      TRAGGO_DEFAULT_USER_PASS: "password"
+    volumes:
+      - ./traggodata:/opt/traggo/data
+    networks:
+      - nginx-network-default
+networks:
+  nginx-network-default:
+    external: true
