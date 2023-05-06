@@ -1,8 +1,0 @@
-2023-05-04_03:43:12.69130 LOG:  starting PostgreSQL 13.8 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit
-2023-05-04_03:43:12.69251 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
-2023-05-04_03:43:12.69713 LOG:  database system was interrupted; last known up at 2023-05-04 03:41:46 GMT
-2023-05-04_03:43:13.17953 LOG:  database system was not properly shut down; automatic recovery in progress
-2023-05-04_03:43:13.18485 LOG:  redo starts at 0/60FB358
-2023-05-04_03:43:13.18519 LOG:  invalid record length at 0/60FB688: wanted 24, got 0
-2023-05-04_03:43:13.18519 LOG:  redo done at 0/60FB660
-2023-05-04_03:43:13.19321 LOG:  database system is ready to accept connections
