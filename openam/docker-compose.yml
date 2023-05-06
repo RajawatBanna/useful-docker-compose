@@ -1,0 +1,10 @@
+services:
+  openam-app:
+    image: openidentityplatform/openam
+    container_name: openam_app
+    ports:
+      - "8088:8080"
+    volumes:
+      - openam-data:/usr/openam/config
+volumes:
+  openam-data:

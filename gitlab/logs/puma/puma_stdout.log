@@ -1,0 +1,52 @@
+=== puma startup: 2023-05-03 18:26:08 +0000 ===
+{"timestamp":"2023-05-03T18:26:08.979Z","pid":825,"message":"! Promoting existing objects to old generation..."}
+{"timestamp":"2023-05-03T18:26:09.087Z","pid":825,"message":"! Compacting..."}
+Note: GC compacting is currently disabled. Refer to `config/initializers_before_autoloader/003_gc_compact.rb` for details.
+{"timestamp":"2023-05-03T18:26:09.088Z","pid":825,"message":"! Friendly fork preparation complete."}
+{"timestamp":"2023-05-03T18:26:09.972Z","pid":825,"message":"- Worker 2 (PID: 980) booted in 0.84s, phase: 0"}
+{"timestamp":"2023-05-03T18:26:09.998Z","pid":825,"message":"- Worker 1 (PID: 978) booted in 0.88s, phase: 0"}
+{"timestamp":"2023-05-03T18:26:10.083Z","pid":825,"message":"- Worker 6 (PID: 988) booted in 0.87s, phase: 0"}
+{"timestamp":"2023-05-03T18:26:10.098Z","pid":825,"message":"- Worker 0 (PID: 976) booted in 0.99s, phase: 0"}
+{"timestamp":"2023-05-03T18:26:10.146Z","pid":825,"message":"- Worker 4 (PID: 984) booted in 0.98s, phase: 0"}
+{"timestamp":"2023-05-03T18:26:10.150Z","pid":825,"message":"- Worker 3 (PID: 982) booted in 1.0s, phase: 0"}
+{"timestamp":"2023-05-03T18:26:10.220Z","pid":825,"message":"- Worker 5 (PID: 986) booted in 1.03s, phase: 0"}
+{"timestamp":"2023-05-03T18:26:10.289Z","pid":825,"message":"- Worker 7 (PID: 990) booted in 1.06s, phase: 0"}
+=== puma startup: 2023-05-04 03:42:32 +0000 ===
+{"timestamp":"2023-05-04T03:42:32.309Z","pid":457,"message":"! Promoting existing objects to old generation..."}
+{"timestamp":"2023-05-04T03:42:32.414Z","pid":457,"message":"! Compacting..."}
+Note: GC compacting is currently disabled. Refer to `config/initializers_before_autoloader/003_gc_compact.rb` for details.
+{"timestamp":"2023-05-04T03:42:32.414Z","pid":457,"message":"! Friendly fork preparation complete."}
+{"timestamp":"2023-05-04T03:42:33.014Z","pid":457,"message":"- Worker 0 (PID: 612) booted in 0.59s, phase: 0"}
+{"timestamp":"2023-05-04T03:42:33.029Z","pid":457,"message":"- Worker 1 (PID: 614) booted in 0.6s, phase: 0"}
+{"timestamp":"2023-05-04T03:42:33.065Z","pid":457,"message":"- Worker 3 (PID: 618) booted in 0.62s, phase: 0"}
+{"timestamp":"2023-05-04T03:42:33.086Z","pid":457,"message":"- Worker 6 (PID: 624) booted in 0.6s, phase: 0"}
+{"timestamp":"2023-05-04T03:42:33.096Z","pid":457,"message":"- Worker 2 (PID: 616) booted in 0.66s, phase: 0"}
+{"timestamp":"2023-05-04T03:42:33.111Z","pid":457,"message":"- Worker 5 (PID: 622) booted in 0.64s, phase: 0"}
+{"timestamp":"2023-05-04T03:42:33.114Z","pid":457,"message":"- Worker 4 (PID: 620) booted in 0.65s, phase: 0"}
+{"timestamp":"2023-05-04T03:42:33.153Z","pid":457,"message":"- Worker 7 (PID: 626) booted in 0.66s, phase: 0"}
+=== puma startup: 2023-05-04 03:43:54 +0000 ===
+{"timestamp":"2023-05-04T03:43:54.127Z","pid":311,"message":"! Promoting existing objects to old generation..."}
+{"timestamp":"2023-05-04T03:43:54.233Z","pid":311,"message":"! Compacting..."}
+Note: GC compacting is currently disabled. Refer to `config/initializers_before_autoloader/003_gc_compact.rb` for details.
+{"timestamp":"2023-05-04T03:43:54.233Z","pid":311,"message":"! Friendly fork preparation complete."}
+{"timestamp":"2023-05-04T03:43:54.804Z","pid":311,"message":"- Worker 2 (PID: 545) booted in 0.54s, phase: 0"}
+{"timestamp":"2023-05-04T03:43:54.842Z","pid":311,"message":"- Worker 0 (PID: 541) booted in 0.6s, phase: 0"}
+{"timestamp":"2023-05-04T03:43:54.902Z","pid":311,"message":"- Worker 1 (PID: 543) booted in 0.65s, phase: 0"}
+{"timestamp":"2023-05-04T03:43:54.940Z","pid":311,"message":"- Worker 5 (PID: 551) booted in 0.64s, phase: 0"}
+{"timestamp":"2023-05-04T03:43:54.959Z","pid":311,"message":"- Worker 4 (PID: 549) booted in 0.67s, phase: 0"}
+{"timestamp":"2023-05-04T03:43:54.966Z","pid":311,"message":"- Worker 3 (PID: 547) booted in 0.69s, phase: 0"}
+{"timestamp":"2023-05-04T03:43:54.977Z","pid":311,"message":"- Worker 6 (PID: 553) booted in 0.67s, phase: 0"}
+{"timestamp":"2023-05-04T03:43:55.051Z","pid":311,"message":"- Worker 7 (PID: 555) booted in 0.73s, phase: 0"}
+=== puma startup: 2023-05-04 05:44:18 +0000 ===
+{"timestamp":"2023-05-04T05:44:18.591Z","pid":318,"message":"! Promoting existing objects to old generation..."}
+{"timestamp":"2023-05-04T05:44:18.688Z","pid":318,"message":"! Compacting..."}
+Note: GC compacting is currently disabled. Refer to `config/initializers_before_autoloader/003_gc_compact.rb` for details.
+{"timestamp":"2023-05-04T05:44:18.688Z","pid":318,"message":"! Friendly fork preparation complete."}
+{"timestamp":"2023-05-04T05:44:19.363Z","pid":318,"message":"- Worker 0 (PID: 534) booted in 0.67s, phase: 0"}
+{"timestamp":"2023-05-04T05:44:19.407Z","pid":318,"message":"- Worker 4 (PID: 542) booted in 0.68s, phase: 0"}
+{"timestamp":"2023-05-04T05:44:19.409Z","pid":318,"message":"- Worker 1 (PID: 536) booted in 0.71s, phase: 0"}
+{"timestamp":"2023-05-04T05:44:19.438Z","pid":318,"message":"- Worker 2 (PID: 538) booted in 0.73s, phase: 0"}
+{"timestamp":"2023-05-04T05:44:19.445Z","pid":318,"message":"- Worker 6 (PID: 546) booted in 0.7s, phase: 0"}
+{"timestamp":"2023-05-04T05:44:19.473Z","pid":318,"message":"- Worker 7 (PID: 547) booted in 0.71s, phase: 0"}
+{"timestamp":"2023-05-04T05:44:19.508Z","pid":318,"message":"- Worker 3 (PID: 540) booted in 0.79s, phase: 0"}
+{"timestamp":"2023-05-04T05:44:19.519Z","pid":318,"message":"- Worker 5 (PID: 544) booted in 0.78s, phase: 0"}

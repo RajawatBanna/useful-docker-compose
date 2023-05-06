@@ -1,0 +1,6 @@
+services:
+  openig-app:
+    image: openidentityplatform/openig
+    container_name: openam_ig
+    ports:
+      - "8089:8080"

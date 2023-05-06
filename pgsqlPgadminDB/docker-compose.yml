@@ -1,0 +1,38 @@
+version: '3.1'
+services:
+  db:
+    container_name: pg_container
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: rajawat
+      POSTGRES_PASSWORD: rajawat
+      POSTGRES_DB: rajawat
+    ports:
+      - "8092:5432"
+    networks:
+      - nginx-network-default
+    volumes:
+      - pgsql-db-data:/var/lib/postgresql/data
+  pgadmin:
+    container_name: pgadmin-container
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: rajawat@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: rajawat
+    ports:
+      - "8392:80"
+    networks:
+      - nginx-network-default
+    volumes:
+      - pgadmindata:/var/lib/pgadmin
+      - $PWD/servers.json:/pgadmin4/servers.json
+        #extra_hosts:
+        #- "host.docker.internal:host-gateway"
+volumes:
+  pgsql-db-data:
+  pgadmindata:
+networks:
+  nginx-network-default:
+    external: true

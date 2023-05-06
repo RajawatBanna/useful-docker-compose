@@ -1,0 +1,5 @@
+mongosh -u rajawat -u rajawat
+use admin
+show dbs
+db
+use lks

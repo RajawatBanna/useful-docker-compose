@@ -1,0 +1,22 @@
+version: "3.5"
+services:
+  glances:
+    container_name: glances
+    image: nicolargo/glances:latest
+    restart: always
+    pid: host
+    ports:
+      - 61208:61208
+    environment:
+      - TZ=Asia/Kolkata
+      - GLANCES_OPT=--webserver
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - glances:/glances/conf
+    networks:
+      - nginx-network-default
+volumes:
+  glances:
+networks:
+  nginx-network-default:
+    external: true

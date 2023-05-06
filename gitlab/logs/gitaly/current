@@ -1,0 +1,29 @@
+{"level":"info","msg":"Wrapper started","pid":332,"time":"2023-05-04T05:43:41.558Z","wrapper":332}
+{"level":"info","msg":"finding process","pid":332,"pid_file":"/var/opt/gitlab/gitaly/gitaly.pid","time":"2023-05-04T05:43:41.558Z","wrapper":332}
+{"level":"info","msg":"spawning a process","pid":332,"time":"2023-05-04T05:43:41.558Z","wrapper":332}
+{"level":"info","msg":"monitoring process","pid":332,"process":408,"time":"2023-05-04T05:43:41.559Z","wrapper":332}
+time="2023-05-04T05:43:41Z" level=info msg="Starting Gitaly, version 15.11.1"
+{"latencies":[0.001,0.005,0.025,0.1,0.5,1,10,30,60,300,1500],"level":"info","msg":"grpc prometheus histograms enabled","time":"2023-05-04T05:43:41.999Z"}
+{"level":"info","msg":"License database preloaded","time":"2023-05-04T05:43:45.476Z"}
+{"level":"info","msg":"removed leftover gitaly process directory","path":"/var/opt/gitlab/gitaly/run/gitaly-315","time":"2023-05-04T05:43:45.477Z"}
+{"level":"info","msg":"removed leftover gitaly process directory","path":"/var/opt/gitlab/gitaly/run/gitaly-370","time":"2023-05-04T05:43:45.478Z"}
+{"error":"list gitaly process directory: open /sys/fs/cgroup/memory/gitaly: no such file or directory","level":"error","msg":"failed to clean up memory cgroups","time":"2023-05-04T05:43:45.478Z"}
+{"error":"list gitaly process directory: open /sys/fs/cgroup/cpu/gitaly: no such file or directory","level":"error","msg":"failed to clean up cpu cgroups","time":"2023-05-04T05:43:45.478Z"}
+{"level":"info","msg":"clearing disk cache object folder","storage":"default","time":"2023-05-04T05:43:45.546Z"}
+{"level":"info","msg":"moving disk cache object folder to /var/opt/gitlab/git-data/repositories/+gitaly/tmp/diskcache4042790954","storage":"default","time":"2023-05-04T05:43:45.546Z"}
+{"level":"info","msg":"finished tempdir cleaner walk","storage":"default","time":"2023-05-04T05:43:45.546Z","time_ms":0}
+{"level":"info","msg":"disk cache object folder doesn't exist, no need to remove","storage":"default","time":"2023-05-04T05:43:45.546Z"}
+{"level":"info","msg":"Starting file walker for /var/opt/gitlab/git-data/repositories/+gitaly/cache","path":"/var/opt/gitlab/git-data/repositories/+gitaly/cache","time":"2023-05-04T05:43:45.546Z"}
+{"level":"info","msg":"Starting file walker for /var/opt/gitlab/git-data/repositories/+gitaly/state","path":"/var/opt/gitlab/git-data/repositories/+gitaly/state","time":"2023-05-04T05:43:45.546Z"}
+{"level":"info","msg":"cleared all cache object files in /var/opt/gitlab/git-data/repositories/+gitaly/tmp/diskcache4042790954 after 43.668µs","storage":"default","time":"2023-05-04T05:43:45.546Z"}
+{"address":"/var/opt/gitlab/gitaly/gitaly.socket","level":"info","msg":"listening at unix address","time":"2023-05-04T05:43:45.552Z"}
+{"address":"/var/opt/gitlab/gitaly/run/gitaly-408/sock.d/intern","level":"info","msg":"listening at unix address","time":"2023-05-04T05:43:45.552Z"}
+{"address":"localhost:9236","level":"info","msg":"starting prometheus listener","time":"2023-05-04T05:43:45.552Z"}
+{"level":"info","msg":"maintenance: daily scheduled","pid":408,"scheduled":"2023-05-04T12:00:00Z","time":"2023-05-04T05:43:45.560Z"}
+{"level":"warning","msg":"forwarding signal","pid":332,"process":408,"signal":15,"time":"2023-05-04T05:44:17.574Z","wrapper":332}
+{"level":"warning","msg":"forwarding signal","pid":332,"process":408,"signal":18,"time":"2023-05-04T05:44:17.576Z","wrapper":332}
+{"error":"received signal \"terminated\"","level":"error","msg":"Gitaly shutdown","time":"2023-05-04T05:44:17.584Z"}
+{"level":"warning","msg":"forwarding signal","pid":332,"process":408,"signal":17,"time":"2023-05-04T05:44:17.588Z","wrapper":332}
+{"error":"os: process already finished","level":"error","msg":"can't forward the signal","pid":332,"process":408,"signal":17,"time":"2023-05-04T05:44:17.588Z","wrapper":332}
+{"error":"exit status 1","level":"error","msg":"waiting for supervised command","pid":332,"time":"2023-05-04T05:44:17.588Z","wrapper":332}
+{"level":"error","msg":"wrapper for process shutting down","pid":332,"process":408,"time":"2023-05-04T05:44:18.567Z","wrapper":332}

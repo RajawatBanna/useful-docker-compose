@@ -1,0 +1,39 @@
+Running db:schema:load rake task
+psql:/opt/gitlab/embedded/service/gitlab-rails/db/structure.sql:9: NOTICE:  extension "btree_gist" already exists, skipping
+psql:/opt/gitlab/embedded/service/gitlab-rails/db/structure.sql:11: NOTICE:  extension "pg_trgm" already exists, skipping
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/001_application_settings.rb
+Creating the default ApplicationSetting record.
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/002_admin.rb
+Administrator account created:
+
+login:    root
+password: ******
+
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/003_create_base_work_item_types.rb
+
+OK
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/004_add_security_training_providers.rb
+
+OK
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/010_settings.rb
+Saved CI JWT signing key
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/020_create_work_item_hierarchy_restrictions.rb
+
+OK
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/998_gitlab_instance_administration_project.rb
+Successfully created self-monitoring project.
+
+== Seed from /opt/gitlab/embedded/service/gitlab-rails/db/fixtures/production/999_common_metrics.rb
+
+== Seed from ee/db/fixtures/production/010_license.rb
+
+== Seed from ee/db/fixtures/production/027_plans.rb
+
+OK

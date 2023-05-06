@@ -1,0 +1,15 @@
+services:
+  db:
+    image: gvenzl/oracle-xe
+    container_name: oradb
+    environment:
+      ORACLE_PASSWORD: rajawat
+      ORACLE_DATABASE: rajawat
+      APP_USER: rajawat
+      APP_USER_PASSWORD: rajawat
+    ports:
+      - "1521:1521"
+    volumes:
+      - oradb-data:/opt/oracle/oradata
+volumes:
+  oradb-data:

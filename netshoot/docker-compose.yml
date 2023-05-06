@@ -1,0 +1,9 @@
+services:
+  netshoot:
+    image: nicolaka/netshoot
+    container_name: netshoot
+    networks:
+      - nginx-network-default
+networks:
+  nginx-network-default:
+    external: true

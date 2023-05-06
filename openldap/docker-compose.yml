@@ -1,0 +1,50 @@
+version: '3'
+services:
+  openldap:
+    container_name: openldap
+    image: osixia/openldap:latest
+    expose: 
+      - 389
+      - 636
+    volumes:
+      - /opt/appdata/openldap/certificates:/container/service/slapd/assets/certs
+      - /opt/appdata/openldap/slapd/database:/var/lib/ldap
+      - /opt/appdata/openldap/slapd/config:/etc/ldap/slapd.d
+    environment: 
+      LDAP_ORGANISATION: "ibracorp"
+      LDAP_DOMAIN: "ibracorp.io"
+      LDAP_ADMIN_USERNAME: "admin"
+      LDAP_ADMIN_PASSWORD: "SomeSuperSecurePassword"
+      LDAP_CONFIG_PASSWORD: "AnotherSuperSecurePassword"
+      LDAP_BASE_DN: "dc=ibracorp,dc=io"
+      LDAP_TLS_CRT_FILENAME: "server.crt"
+      LDAP_TLS_KEY_FILENAME: "server.key"
+      LDAP_TLS_CA_CRT_FILENAME: "ibracorp.io.ca.crt"
+    networks:
+      - proxy
+    restart: unless-stopped
+  
+  ldapadmin:
+    container_name: ldapadmin
+    image: osixia/phpldapadmin:latest
+    ports: 
+      - "8399:80"
+    labels:
+      traefik.enable: true
+      traefik.http.routers.ldapadmin.entryPoints: https
+      traefik.http.routers.ldapadmin.middlewares: auth@file
+    environment: 
+      PHPLDAPADMIN_LDAP_HOSTS: openldap
+      PHPLDAPADMIN_HTTPS: false
+    volumes:
+      - /opt/appdata/openldap/admin:/var/www/phpldapadmin # used to be able to make edits to the config file 
+    depends_on:
+      - openldap
+    networks:
+      - proxy
+    restart: unless-stopped
+
+networks:
+  proxy:
+    driver: bridge
+    external: true

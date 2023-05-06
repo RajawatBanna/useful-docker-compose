@@ -1,0 +1,3 @@
+[29/Apr/2023:17:02:05 +0000] - 404 404 - GET https tomcat.rajawat.com "/" [Client 172.27.0.1] [Length 426] [Gzip 1.60] [Sent-to tomcat9] "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" "https://nginx.rajawat.com/"
+[29/Apr/2023:17:02:09 +0000] - 302 302 - GET https tomcat.rajawat.com "/webapp" [Client 172.27.0.1] [Length 0] [Gzip -] [Sent-to tomcat9] "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" "-"
+[29/Apr/2023:17:02:09 +0000] - 200 200 - GET https tomcat.rajawat.com "/webapp/" [Client 172.27.0.1] [Length 499] [Gzip 2.52] [Sent-to tomcat9] "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" "-"

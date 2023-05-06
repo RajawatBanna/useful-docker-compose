@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+
+  lldap:
+    container_name: lldap
+    hostname: lldap
+    image: nitnelave/lldap:stable
+    restart: unless-stopped
+    networks:
+      - caddy_caddynet
+    expose:
+      - 3890   # LDAP
+      - 17170  # Web UI
+    env_file:
+      - container-vars.env
+    volumes:
+      - ./data:/data
+      - ./secrets:/secrets
+
+networks:
+  caddy_caddynet:
+    external: true
+

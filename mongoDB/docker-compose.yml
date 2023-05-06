@@ -1,0 +1,27 @@
+# Use root/example as user/password credentials
+version: '3.1'
+services:
+  mongo:
+    image: mongo
+    restart: always
+    container_name: mongo_db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: rajawat
+      MONGO_INITDB_ROOT_PASSWORD: rajawat
+    networks:
+      - nginx-network-default
+  mongo-express:
+    image: mongo-express
+    container_name: mongodb-service
+    restart: always
+    expose:
+      - 8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: rajawat
+      ME_CONFIG_MONGODB_ADMINPASSWORD: rajawat
+      ME_CONFIG_MONGODB_URL: mongodb://rajawat:rajawat@mongo:27017/
+    networks:
+      - nginx-network-default      
+networks:
+  nginx-network-default:
+    external: true

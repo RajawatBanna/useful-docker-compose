@@ -1,0 +1,51 @@
+# Logfile created on 2023-05-04 05:43:29 +0000 by logger.rb/v1.4.3
+[2023-05-04T05:43:29+00:00] INFO: Started Cinc Zero at chefzero://localhost:1 with repository at /opt/gitlab/embedded (One version per cookbook)
+[2023-05-04T05:43:29+00:00] INFO: *** Cinc Client 17.10.0 ***
+[2023-05-04T05:43:29+00:00] INFO: Platform: x86_64-linux
+[2023-05-04T05:43:29+00:00] INFO: Cinc-client pid: 31
+[2023-05-04T05:43:30+00:00] INFO: Setting the run_list to ["recipe[gitlab-ee]"] from CLI options
+[2023-05-04T05:43:30+00:00] INFO: Run List is [recipe[gitlab-ee]]
+[2023-05-04T05:43:30+00:00] INFO: Run List expands to [gitlab-ee]
+[2023-05-04T05:43:30+00:00] INFO: Starting Cinc Client Run for gitlab.example.com
+[2023-05-04T05:43:30+00:00] INFO: Running start handlers
+[2023-05-04T05:43:30+00:00] INFO: Start handlers complete.
+[2023-05-04T05:43:31+00:00] INFO: Loading cookbooks [gitlab-ee@0.0.1, package@0.1.0, gitlab@0.0.1, consul@0.1.0, patroni@0.1.0, pgbouncer@0.1.0, spamcheck@0.1.0, runit@5.1.7, logrotate@0.1.0, postgresql@0.1.0, redis@0.1.0, monitoring@0.1.0, registry@0.1.0, mattermost@0.1.0, gitaly@0.1.0, praefect@0.1.0, gitlab-kas@0.1.0, gitlab-pages@0.1.0, letsencrypt@0.1.0, nginx@0.1.0, acme@4.1.6, crond@0.1.0]
+[2023-05-04T05:43:34+00:00] INFO: Skipped selecting an init system because it was explicitly disabled
+[2023-05-04T05:43:34+00:00] WARN: logrotate does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: logrotate does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: puma does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: gitlab-rails does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: gitlab-shell does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: gitlab-workhorse does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: gitlab-pages does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: gitlab-kas does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: gitaly does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: mailroom does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:34+00:00] WARN: gitaly does not have a log_group or default logdir mode defined. Setting to 0700.
+[2023-05-04T05:43:37+00:00] WARN: only_if block for templatesymlink[Create a gitlab_pages_secret and create a symlink to Rails root] returned a string, did you mean to run a command?
+[2023-05-04T05:43:37+00:00] WARN: only_if block for templatesymlink[Create a gitlab_kas_secret and create a symlink to Rails root] returned a string, did you mean to run a command?
+[2023-05-04T05:43:37+00:00] INFO: link[/opt/gitlab/service/logrotate] created
+[2023-05-04T05:43:37+00:00] INFO: link[/opt/gitlab/service/redis] created
+[2023-05-04T05:43:37+00:00] INFO: link[/opt/gitlab/service/gitaly] created
+[2023-05-04T05:43:39+00:00] INFO: link[/opt/gitlab/service/postgresql] created
+[2023-05-04T05:43:39+00:00] INFO: file[/opt/gitlab/service/postgresql/supervise/status] owner changed to 996
+[2023-05-04T05:43:39+00:00] INFO: file[/opt/gitlab/service/postgresql/supervise/status] group changed to 996
+[2023-05-04T05:43:39+00:00] INFO: file[/opt/gitlab/service/postgresql/supervise/status] updated atime and mtime to 2023-05-04 05:43:39 +0000
+[2023-05-04T05:43:39+00:00] INFO: file[/opt/gitlab/service/postgresql/log/supervise/status] owner changed to 996
+[2023-05-04T05:43:39+00:00] INFO: file[/opt/gitlab/service/postgresql/log/supervise/status] group changed to 996
+[2023-05-04T05:43:39+00:00] INFO: file[/opt/gitlab/service/postgresql/log/supervise/status] updated atime and mtime to 2023-05-04 05:43:39 +0000
+[2023-05-04T05:43:39+00:00] INFO: link[/opt/gitlab/service/gitlab-kas] created
+[2023-05-04T05:43:39+00:00] INFO: link[/opt/gitlab/service/puma] created
+[2023-05-04T05:43:39+00:00] INFO: link[/opt/gitlab/service/sidekiq] created
+[2023-05-04T05:43:39+00:00] INFO: link[/opt/gitlab/service/gitlab-workhorse] created
+[2023-05-04T05:43:40+00:00] INFO: link[/opt/gitlab/service/nginx] created
+[2023-05-04T05:43:40+00:00] INFO: link[/opt/gitlab/service/gitlab-exporter] created
+[2023-05-04T05:43:40+00:00] INFO: link[/opt/gitlab/service/redis-exporter] created
+[2023-05-04T05:43:40+00:00] INFO: link[/opt/gitlab/service/prometheus] created
+[2023-05-04T05:43:40+00:00] INFO: link[/opt/gitlab/service/alertmanager] created
+[2023-05-04T05:43:40+00:00] INFO: link[/opt/gitlab/service/postgres-exporter] created
+[2023-05-04T05:43:40+00:00] WARN: only_if block for templatesymlink[Create a gitlab_suggested_reviewers_secret and create a symlink to Rails root] returned a string, did you mean to run a command?
+[2023-05-04T05:43:40+00:00] INFO: Cinc Client Run complete in 9.831471834 seconds
+[2023-05-04T05:43:40+00:00] INFO: Running report handlers
+[2023-05-04T05:43:40+00:00] INFO: Report handlers complete
+[2023-05-04T05:43:40+00:00] WARN: This release of Cinc Client became end of life (EOL) on May 1st 2023. Please update to a supported release to receive new features, bug fixes, and security updates.

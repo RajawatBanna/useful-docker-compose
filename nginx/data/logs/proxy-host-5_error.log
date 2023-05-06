@@ -1,0 +1,2 @@
+2023/05/04 12:48:47 [error] 43204#43204: *2389 pgadmin-container could not be resolved (3: Host not found), client: 172.27.0.1, server: pgadmin.rajawat.com, request: "GET / HTTP/1.1", host: "pgadmin.rajawat.com"
+2023/05/04 12:48:51 [error] 43204#43204: *2389 pgadmin-container could not be resolved (2: Server failure), client: 172.27.0.1, server: pgadmin.rajawat.com, request: "GET /favicon.ico HTTP/1.1", host: "pgadmin.rajawat.com", referrer: "http://pgadmin.rajawat.com/"

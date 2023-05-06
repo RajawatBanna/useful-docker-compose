@@ -1,0 +1,22 @@
+version: "3.2"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+        - 5672:5672
+        - 15672:15672
+    environment:
+      RABBITMQ_DEFAULT_USER : guest
+      RABBITMQ_DEFAULT_PASS : guest
+    volumes:
+        - rabbitmq-data1:/var/lib/rabbitmq/
+        - rabbitmq-log1:/var/log/rabbitmq
+    networks:
+        - nginx-network-default
+networks:
+  nginx-network-default:
+    external: true
+volumes:
+  rabbitmq-data1:
+  rabbitmq-log1:

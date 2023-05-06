@@ -1,0 +1,32 @@
+version: '3'
+services:
+  db:
+    image: mysql
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: rajawat
+      MYSQL_DATABASE: rajawat
+      MYSQL_USER: rajawat
+      MYSQL_PASSWORD: rajawat
+    ports:
+      - "8091:3306"
+    volumes:
+      - mysql-db-data:/var/lib/mysql
+    networks:
+      - nginx-network-default
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: php_my_admin_container
+    environment:
+      PMA_HOST: mysql_container
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    ports:
+      - 8191:80
+    networks:
+      - nginx-network-default
+volumes:
+  mysql-db-data:
+networks:
+  nginx-network-default:
+    external: true

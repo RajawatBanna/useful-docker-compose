@@ -1,0 +1,21 @@
+version: "2.1"
+services:
+  openvpn-as:
+    image: ghcr.io/linuxserver/openvpn-as
+    container_name: openvpn-as
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - INTERFACE=eth0 #optional
+    volumes:
+      - openvpn-data:/config
+    ports:
+      - 743:943
+      - 7443:9443
+      - 1194:1194/udp
+    restart: unless-stopped
+volumes:
+  openvpn-data:

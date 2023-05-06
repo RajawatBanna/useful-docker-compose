@@ -1,0 +1,21 @@
+version: '3'
+services:
+  openiam:
+    image: openiam/openiam:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=database
+      - DB_PORT=5432
+      - DB_NAME=openiam
+      - DB_USER=openiam
+      - DB_PASSWORD=openiam
+    depends_on:
+      - database
+  database:
+    image: postgres:12
+    environment:
+      - POSTGRES_DB=openiam
+      - POSTGRES_USER=openiam
+      - POSTGRES_PASSWORD=openiam
+

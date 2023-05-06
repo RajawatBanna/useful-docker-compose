@@ -1,0 +1,13 @@
+users:
+  rajawat:
+    displayname: "Rajawat Banna"
+    password: "$argon2id$v=19$m=65536,t=3,p=4$AZCY4a0ZSS4wCAbGnSLQSQ$0F2WAO4RLl5T2aS6pG1CgM5L984jGY4qDd5MhKazMAg"
+    email: bannarajawatlokesh@gmail.com
+    groups:
+      - admins
+      - dev
+  harry:
+    displayname: "Harry Potter"
+    password: "$argon2id$v=19$m=65536,t=3,p=2$BpLnfgDsc2WD8F2q$o/vzA4myCqZZ36bUGsDY//8mKUYNZZaR0t4MFFSs+iM"
+    email: harry.potter@authelia.com
+    groups: []

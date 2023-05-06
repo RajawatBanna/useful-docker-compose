@@ -1,0 +1,12 @@
+services:
+  mo-tomcat:
+    image: tomcat:9-jdk8-openjdk-slim-buster
+    container_name: tomcat9
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    networks: 
+      - nginx-network-default
+networks:
+  nginx-network-default:
+    external: true

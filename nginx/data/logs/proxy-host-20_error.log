@@ -1,0 +1,4 @@
+2023/05/03 19:10:50 [error] 27350#27350: *4918 dashy could not be resolved (2: Server failure), client: 172.27.0.1, server: dashy.rajawat.com, request: "GET / HTTP/2.0", host: "dashy.rajawat.com", referrer: "http://nginx.rajawat.com/"
+2023/05/03 19:10:54 [error] 27350#27350: *4918 dashy could not be resolved (2: Server failure), client: 172.27.0.1, server: dashy.rajawat.com, request: "GET /favicon.ico HTTP/2.0", host: "dashy.rajawat.com", referrer: "https://dashy.rajawat.com/"
+2023/05/05 04:58:19 [error] 202#202: *1 dashy could not be resolved (2: Server failure), client: 172.27.0.1, server: dashy.rajawat.com, request: "GET / HTTP/2.0", host: "dashy.rajawat.com", referrer: "http://nginx.rajawat.com/"
+2023/05/05 04:58:22 [error] 202#202: *1 dashy could not be resolved (2: Server failure), client: 172.27.0.1, server: dashy.rajawat.com, request: "GET /favicon.ico HTTP/2.0", host: "dashy.rajawat.com", referrer: "https://dashy.rajawat.com/"

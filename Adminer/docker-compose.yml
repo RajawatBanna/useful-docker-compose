@@ -1,0 +1,12 @@
+services:
+  adminer:
+    container_name: adminer-view
+    image: adminer
+    restart: always
+    ports:
+      - "8292:8080"
+    networks:
+      - nginx-network-default
+networks:
+  nginx-network-default:
+    external: true

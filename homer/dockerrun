@@ -1,0 +1,5 @@
+docker run -d \
+  -p 8080:8080 \
+  -v </your/local/assets/>:/www/assets \
+  --restart=always \
+  b4bz/homer:latest

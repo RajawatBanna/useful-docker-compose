@@ -1,0 +1,19 @@
+services:
+  jenkin:
+    image: jenkins/jenkins
+    container_name: jenkins
+    restart: unless-stopped
+    ports:
+      - "50000:50000"
+      - "8084:8080"
+      - "2376:2376"
+      - "3000:3000"
+    volumes:
+      - jenkins-data:/var/jenkins_home
+    networks:
+      - nginx-network-default
+volumes:
+  jenkins-data:
+networks:
+  nginx-network-default:
+    external: true

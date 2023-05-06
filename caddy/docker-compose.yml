@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+
+  caddy:
+    image: caddy
+    container_name: caddy
+    hostname: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    networks:
+      - caddynet
+    env_file:
+      - container-vars.env
+        #volumes:
+      # - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      #- ./data:/data
+      #- ./config:/config
+
+  whoami:
+    image: "containous/whoami"
+    container_name: "whoami"
+    hostname: "whoami"
+    networks:
+      - caddynet
+
+networks:
+
+  caddynet:
+    attachable: true
+    driver: bridge

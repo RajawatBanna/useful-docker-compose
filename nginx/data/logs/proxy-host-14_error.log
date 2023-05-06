@@ -1,0 +1,2 @@
+2023/04/30 08:08:56 [error] 384#384: *1024 heimdall could not be resolved (3: Host not found), client: 172.27.0.1, server: home.rajawat.com, request: "GET / HTTP/2.0", host: "home.rajawat.com", referrer: "https://nginx.rajawat.com/"
+2023/04/30 08:09:00 [error] 384#384: *1024 heimdall could not be resolved (3: Host not found), client: 172.27.0.1, server: home.rajawat.com, request: "GET /favicon.ico HTTP/2.0", host: "home.rajawat.com", referrer: "https://home.rajawat.com/"

@@ -1,0 +1,1 @@
+2023/05/05 10:10:03 [error] 64733#64733: *14318 php_my_admin_container could not be resolved (3: Host not found), client: 172.27.0.1, server: mysql.rajawat.com, request: "POST /index.php?route=/ HTTP/2.0", host: "mysql.rajawat.com"

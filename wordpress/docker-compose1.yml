@@ -1,0 +1,30 @@
+services:
+   db:
+     image: mysql
+     volumes:
+       - db_data_wp:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: wordpress
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: wordpress
+     networks:
+      - nginx-network-default
+
+   wordpress:
+     image: wordpress
+     container_name: wordpress-service
+     restart: always
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD: wordpress
+     networks:
+      - nginx-network-default
+
+volumes:
+    db_data_wp:
+networks:
+  nginx-network-default:
+    external: true
