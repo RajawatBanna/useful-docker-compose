@@ -1,0 +1,17 @@
+services:
+  dailyNotes:
+    image: m0ngr31/dailynotes
+    container_name: dailyNotes
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - dailyNotes:/app/config
+    networks:
+      - nginx-network-default
+volumes:
+  dailyNotes:
+networks:
+  nginx-network-default:
+    external: true
+
