@@ -55,7 +55,7 @@ docker-compose down -v
 ### Recommended to use - rajawat db [ which is created in docker compose]
 
 &NewLine;
->- username - **rajawat**
+>- database - **rajawat**
 >- username  - **rajawat**
 >- password - **rajawat**
 >- port - **1521**

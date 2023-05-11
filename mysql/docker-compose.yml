@@ -9,7 +9,7 @@ services:
       MYSQL_USER: rajawat
       MYSQL_PASSWORD: rajawat
     ports:
-      - "8091:3306"
+      - "3306:3306"
     volumes:
       - mysql-db-data:/var/lib/mysql
     networks:

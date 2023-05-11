@@ -40,10 +40,20 @@ docker-compose down -v
 ## 🎓 MSSQL Commands
 #
 
-1. Run the following command to open the mssql client terminal and enter the password (Passw0rd.) when prompted.
+1. Run the following command to open the mssql client terminal
+
+Enter the password (Passw0rd.) when prompted.
 
 ```console
 docker exec -it mssql_container /opt/mssql-tools/bin/sqlcmd -S localhost -U sa
+```
+
+OR
+
+Enter the password in command itself
+
+```console
+docker exec -it mssql_container /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Passw0rd.
 ```
 
 2. To See list of database:
@@ -74,7 +84,10 @@ drop database lks;
 GO
 ```
 
-
+6. To quit the database;
+```console
+quit
+```
 
 ## Author
 
