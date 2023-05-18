@@ -3,16 +3,28 @@
     <p>Some basic commands to use mssql docker container</p>
 </div>
 
-## ✨Prerequisites
+🐳 [Docker-Hub](https://hub.docker.com/_/microsoft-mssql-server)
 
-- Make sure that you have Docker and Docker Compose installed
-  - Windows or macOS:
-    [Install Docker Desktop](https://www.docker.com/get-started)
-  - Linux: [Install Docker](https://www.docker.com/get-started) and then
-    [Docker Compose](https://github.com/docker/compose)
-- Download some or all of the samples from this repository.
 
-### Running a sample
+## 📌 MSSQL Edition. 
+
+### Modify docker-compose.yml and add environment variable MSSQL_PID as described below.
+
+MSSQL_PID is the Product ID (PID) or Edition that the container will run with. Acceptable values:
+
+**Developer** : This will run the container using the Developer Edition (this is the default if no MSSQL_PID environment variable is supplied)
+
+**Express** : This will run the container using the Express Edition
+
+**Standard** : This will run the container using the Standard Edition
+
+**Enterprise** : This will run the container using the Enterprise Edition
+
+**EnterpriseCore** : This will run the container using the Enterprise Edition Core
+
+#
+
+## ⏩ Running a sample
 
 ```console
 docker-compose up

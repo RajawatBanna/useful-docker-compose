@@ -5,18 +5,8 @@
 
 🐳 [Docker-Hub](https://hub.docker.com/r/gvenzl/oracle-xe)
 
-## ✨Prerequisites
-#
 
-- Make sure that you have Docker and Docker Compose installed
-  - Windows or macOS:
-    [Install Docker Desktop](https://www.docker.com/get-started)
-  - Linux: [Install Docker](https://www.docker.com/get-started) and then
-    [Docker Compose](https://github.com/docker/compose)
-- Download some or all of the samples from this repository.
-#
-
-### Running a sample
+## ⏩ Running a sample
 
 ```console
 docker-compose up
@@ -39,23 +29,23 @@ docker-compose down -v
 > Note : In Oracle there are two types of database CDB and PDB. We can create at max 3 database.
 
 &NewLine;
->- database  - **xe**
+>- database (sid)  - **xe**
 >- username - **system**
 >- password - **rajawat**
 >- port - **1521**
 &NewLine;
 
 &NewLine;
->- database  - **xepdb1**
+>- database (service)  - **xepdb1**
 >- username - **rajawat**
 >- password - **rajawat**
 >- port - **1521**
 &NewLine;
 
-### Recommended to use - rajawat db [ which is created in docker compose]
+### 📌Recommended to use
 
 &NewLine;
->- database - **rajawat**
+>- database (service) - **rajawat**
 >- username  - **rajawat**
 >- password - **rajawat**
 >- port - **1521**

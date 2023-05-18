@@ -1,0 +1,1 @@
+docker run -dit --name my-apache-app -p 8789:80 -v ./lks:/usr/local/apache2/htdocs/ httpd:2.4

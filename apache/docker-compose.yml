@@ -1,0 +1,14 @@
+services:
+  apache:
+    image: httpd:2.4
+    container_name: apache
+    restart: always
+    ports:
+      - "9999:80"
+    volumes:
+      - ./lks:/usr/local/apache2/htdocs/
+    networks:
+      - nginx-network-default
+networks:
+  nginx-network-default:
+    external: true
