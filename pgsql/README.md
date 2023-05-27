@@ -1,18 +1,11 @@
 <div align="center" width="100%">
-    <h1>MSSQL Docker Guide</h1>
-    <p>Some basic commands to use mssql docker container</p>
+    <h1>PGSQL Docker Guide</h1>
+    <p>Some basic commands to use pgsql docker container</p>
 </div>
 
-## ✨Prerequisites
-
-- Make sure that you have Docker and Docker Compose installed
-  - Windows or macOS:
-    [Install Docker Desktop](https://www.docker.com/get-started)
-  - Linux: [Install Docker](https://www.docker.com/get-started) and then
-    [Docker Compose](https://github.com/docker/compose)
-- Download some or all of the samples from this repository.
-
-### Running a sample
+🐳 [Docker-Hub](https://hub.docker.com/_/postgres)
+#
+## ⏩ Running a sample
 
 ```console
 docker-compose up
@@ -30,51 +23,64 @@ To stop and remove all containers with Volume of the sample application run:
 docker-compose down -v
 ```
 
-## ✨ MSSQL Config
+## ✨ PGSQL Config
 #
->- username  - **sa**
+&NewLine;
+>- database (Created Default)- **postgres**
+>- username  - **postgres**
 >- password - **Passw0rd.**
->- port - **1433**
+>- port - **5432**
+&NewLine;
 
+&NewLine;
+>- database (Created using Docker compose) - **rajawat**
+>- username  - **postgres**
+>- password - **Passw0rd.**
+>- port - **5432**
+&NewLine;
 
-## 🎓 MSSQL Commands
+## 🎓 PGSQL Commands
 #
 
-1. Run the following command to open the mssql client terminal and enter the password (Passw0rd.) when prompted.
+1. Run the following command to open the pgsql client terminal
 
 ```console
-docker exec -it mssql_container /opt/mssql-tools/bin/sqlcmd -S localhost -U sa
+docker exec -it pg_container psql -h localhost -U postgres
 ```
 
 2. To See list of database:
 
 ```console
-select name from sys.databases;
-GO
+\l
 ```
 
 3. Create database command
 
 ```console
 create database lks;
-GO
 ```
 
 4. Change database context command
 
 ```console
-use lks;
-GO
+\c lks
+```
+4. List all tables in database
+
+```console
+\dt
 ```
 
-5. Create database command
+5. Drop database command
 
 ```console
 drop database lks;
-GO
 ```
 
-
+6. To quit the database;
+```console
+quit
+```
 
 ## Author
 

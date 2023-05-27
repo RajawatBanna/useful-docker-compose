@@ -5,8 +5,8 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_USER: rajawat
-      POSTGRES_PASSWORD: rajawat
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Passw0rd.
       POSTGRES_DB: rajawat
     ports:
       - "8092:5432"

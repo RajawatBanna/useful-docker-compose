@@ -89,7 +89,7 @@ use lks;
 GO
 ```
 
-5. Create database command
+5. Drop database command
 
 ```console
 drop database lks;
