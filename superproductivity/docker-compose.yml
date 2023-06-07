@@ -1,0 +1,11 @@
+version: '3'
+services:
+  superproductivity:
+    container_name: super_productivity
+    image: johannesjo/super-productivity:latest
+    restart: always
+    networks:
+      - nginx-network-default
+networks:
+  nginx-network-default:
+    external: true

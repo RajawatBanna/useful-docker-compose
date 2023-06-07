@@ -51,6 +51,36 @@ docker-compose down -v
 >- port - **1521**
 &NewLine;
 
+# 🎓 ORASQL Commands
+#
+
+1. Run the following command to open the mssql client terminal
+
+Enter the password (Passw0rd.) when prompted.
+
+```console
+docker exec -it oradb sqlplus sys/rajawat as sysdba
+```
+
+```console
+docker exec -it oradb sqlplus rajawat/rajawat@localhost:1521/rajawat
+```
+
+```console
+docker exec -it oradb sqlplus rajawat/rajawat@localhost:1521/xepdb1
+```
+
+2. Run the following command to list all the tables in the connected database
+
+```console
+SELECT table_name FROM user_tables;
+```
+
+3. To quit the database;
+```console
+quit
+```
+
 
 ## 🎓 Use Oracle SQL Developer as oracle db client
 #
