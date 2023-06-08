@@ -1,3 +1,0 @@
-production:
-  adapter: redis
-  url: unix:/var/opt/gitlab/redis/redis.socket

@@ -1,1 +1,0 @@
-{"postgresql":{"dir":"/var/opt/gitlab/postgresql","unix_socket_directory":"/var/opt/gitlab/postgresql","port":5432},"gitlab":{"gitlab-rails":{"db_database":"gitlabhq_production"}},"pgbouncer":{"listen_addr":"0.0.0.0","listen_port":6432,"databases_ini":"/var/opt/gitlab/pgbouncer/databases.ini","databases_json":"/var/opt/gitlab/pgbouncer/databases.json"}}

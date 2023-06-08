@@ -1,9 +1,0 @@
-
-[redis]
-URL = "unix:/var/opt/gitlab/redis/redis.socket"
-Password = ""
-
-
-[image_resizer]
-  max_scaler_procs = 4
-  max_filesize = 250000
