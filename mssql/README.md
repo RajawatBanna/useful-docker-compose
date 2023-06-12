@@ -101,6 +101,16 @@ GO
 quit
 ```
 
+7. To take backup of database
+```console
+docker exec -it mssql_container1 /opt/mssql-tools/bin/sqlcmd  -S localhost -U sa -P 'Passw0rd.' -Q "BACKUP DATABASE lks TO DISK = '/var/opt/sqlbackup/lks.bak' WITH STATS = 10"
+```
+
+6. To restore backup
+```console
+docker exec -it mssql_container1 /opt/mssql-tools/bin/sqlcmd  -S localhost -U sa -P 'Passw0rd.' -Q "RESTORE DATABASE lks FROM DISK='/var/opt/sqlbackup/lks.bak' WITH REPLACE;"
+```
+
 ## Author
 
 ## 👤 RajawatBanna
