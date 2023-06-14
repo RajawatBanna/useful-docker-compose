@@ -1,18 +1,13 @@
 <div align="center" width="100%">
-    <h1>MSSQL Docker Guide</h1>
-    <p>Some basic commands to use mssql docker container</p>
+    <h1>Redis Docker Guide</h1>
+    <p>Some basic commands to use redis docker container</p>
 </div>
 
-## ✨Prerequisites
+## Redis server 🐳 [Docker-Hub](https://hub.docker.com/_/redis)
+## Redis insight 🐳 [Docker-Hub](https://hub.docker.com/r/redislabs/redisinsight)
 
-- Make sure that you have Docker and Docker Compose installed
-  - Windows or macOS:
-    [Install Docker Desktop](https://www.docker.com/get-started)
-  - Linux: [Install Docker](https://www.docker.com/get-started) and then
-    [Docker Compose](https://github.com/docker/compose)
-- Download some or all of the samples from this repository.
 
-### Running a sample
+## ⏩ Running a sample
 
 ```console
 docker-compose up
@@ -28,7 +23,6 @@ To stop and remove all containers with Volume of the sample application run:
 
 ```console
 docker-compose down -v
-```
 
 ## ✨ MSSQL Config
 #

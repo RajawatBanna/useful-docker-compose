@@ -5,10 +5,10 @@ services:
        - db_data_wp:/var/lib/mysql
      restart: always
      environment:
-       MYSQL_ROOT_PASSWORD: wordpress
+       MYSQL_ROOT_PASSWORD: password
        MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
+       MYSQL_USER: admin
+       MYSQL_PASSWORD: password
      networks:
       - nginx-network-default
 
@@ -18,8 +18,10 @@ services:
      restart: always
      environment:
        WORDPRESS_DB_HOST: db:3306
-       WORDPRESS_DB_USER: wordpress
-       WORDPRESS_DB_PASSWORD: wordpress
+       WORDPRESS_DB_USER: admin
+       WORDPRESS_DB_PASSWORD: password
+     ports:
+      - 8787:80
      networks:
       - nginx-network-default
 

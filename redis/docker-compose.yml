@@ -1,0 +1,29 @@
+version: '3'
+services:
+  # Redis Server
+  redis-server:
+    image: redis
+    container_name: redis-server
+    hostname: redis-server
+    ports:
+      - "6379:6379"
+    networks:
+      - nginx-network-default
+
+  # Redis Client
+  redis-insight:
+    image: redislabs/redisinsight
+    container_name: redis-insight
+    environment:
+      RITRUSTEDORIGINS: https://redisinsight.rajawat.com,http://localhost,http://172.27.0.1
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
+    tty: true
+    networks:
+      - nginx-network-default
+    depends_on:
+      - redis-server
+networks:
+  nginx-network-default:
+    external: true
