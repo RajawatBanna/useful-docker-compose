@@ -74,38 +74,40 @@ docker compose up
 
 ### Dashboards
 - [Homepage](homepage) - A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations.
-- [Homer](homer) - A dead simple static homepage to expose your server services, with an easy yaml configuration and connectivity check.
-- [Dashy](dashy) - Feature-rich homepage for your homelab, with easy YAML configuration.
-- [Heimdall](heimdall) - Heimdall is an elegant solution to organise all your web applications.
+- ✨[Dashy](dashy) - Feature-rich homepage for your homelab, with easy YAML configuration.
 
 ### Monitoring
-- [Portainer](portainer) - Portainer is a lightweight management UI which allows you to easily manage your different Docker environments (Docker hosts or Swarm clusters).
+- ✨[Portainer](portainer) - Portainer is a lightweight management UI which allows you to easily manage your different Docker environments.
+- ✨[Glances](glances) - Glances containers are availables. You can use it to monitor your server and all your other containers !
+- ✨[Goaccess](nginx-proxy-manager-goaccess) - Real-time web log analyzer and interactive viewer that visualizes various logs of popular reverse proxies such as Nginx, Nginx Proxy Manager and Traefik.
 - [Yacht](yacht) - Yacht is a container management UI with a focus on templates and 1-click deployments. 
 - [Dozzle](dozzle) - Dozzle is a small lightweight application with a web based interface to monitor Docker logs. It doesn’t store any log files. It is for live monitoring of your container logs only.
-- [Glances](glances) - Glances containers are availables. You can use it to monitor your server and all your other containers !
 - [Uptimekuma](uptimeKuma) - Uptime Kuma is an easy-to-use self-hosted monitoring tool.
 - [Watchtower](watchtower) - A container-based solution for automating Docker container base image updates.
 - [Changedetection](examples/changedetection) - Self-hosted tool for staying up-to-date with web-site content changes.
 - [Grafana+Loki+Promtail+InfluxDB+Telegraf](examples/grafana-monitoring) - Grafana is the open source analytics & monitoring solution for every database. Combined with other open-source tools like Loki, Promtail, InfluxDB and Telegraf, monitoring data can be aggregated, normalized, filtered, parsed and finally visualized within a web dashboard.
 - [Speedtest-Tracker](examples/speedtest-tracker) - Continuously track your internet speed.
 - [Openspeedtest](examples/openspeedtest) - A free and open-source HTML5 network performance estimation tool written in vanilla JavaScript and only uses built-in web APIs like XHR, HTML, CSS, JS and SVG.
-- [Goaccess](examples/nginx-proxy-manager-goaccess) - Real-time web log analyzer and interactive viewer that visualizes various logs of popular reverse proxies such as Nginx, Nginx Proxy Manager and Traefik.
 - [WatchYourLAN](examples/watchyourlan) - Lightweight network IP scanner with web GUI.
-- [Home Assistant](examples/homeassistant) - Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.
-- [dockcheck-web](examples/dockcheck-web) - A webpage showing available image updates for your running containers.
 
 ### Databases
 
-- [PGSQL](pgsqlPgadminDB) - The PostgreSQL database server with PgAdmin client.
-- [MYSQL](mysqlPhpMyAdminDB) - MySQL database server with Php My Admin client.
+- [PGSQL](pgsql) - The PostgreSQL database server with PgAdmin client.
+- [MYSQL](mysql) - MySQL database server with Php My Admin client.
 - [MSSQL](mssql) - Microsoft Sql server database.
 - [ORACLE-XE](oracleDB) - Oracle Database XE (21c, 18c, 11g). See gvenzl/oracle-free for Oracle Database 23c Free.
 - [MONGO-DB](mongoDB) - MongoDB server with client
-- [SAP HANA](sapHana) - Sap Hana Database.
 
 ### Caching 
 
-- [Redis](redis) - Redis (REmote DIctionary Server in full) is a free and open-source, fast, high-performance, and flexible distributed in-memory computing system that can be used from most if not all programming languages.
+- ✨[Redis](redis) - Redis (REmote DIctionary Server in full) is a free and open-source, fast, high-performance, and flexible distributed in-memory computing system that can be used from most if not all programming languages.
+
+- [memached](memcached) - Redis (REmote DIctionary Server in full) is a free and open-source, fast, high-performance, and flexible distributed in-memory computing system that can be used from most if not all programming languages.
+
+### Message Broker
+
+- ✨[RabbitMQ](rabbitmq) - RabbitMQ is an open-source message-broker software
+- [Kafka](kafka) - Kafka is an open-source message-broker software
 
 ### Time Management 
 
@@ -127,7 +129,7 @@ docker compose up
 
 ### Reverse Proxies
 - [Traefik](traefik) - Traefik is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease. It supports several backends (Docker, Swarm, Mesos/Marathon, …) to manage its configuration automatically and dynamically.
-- [Nginx Proxy Manager](nginx-proxy-manager) - Nginx Proxy Manager is an easy way to accomplish reverse proxying hosts with SSL termination.
+- ✨[Nginx Proxy Manager](nginx-proxy-manager) - Nginx Proxy Manager is an easy way to accomplish reverse proxying hosts with SSL termination.
 - [Caddy](caddy) - The Caddy web server is an extensible, cross-platform, open-source web server written in Go. Caddy obtains and renews TLS certificates for your sites automatically.
 - ~~[oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy)~~ - A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.
 
@@ -194,7 +196,7 @@ docker compose up
 - [Papermerge](examples/papermerge) - Free and open source document management system with OCR designed for scanned documents, digital archives, pdf, tiff, jpeg.
 
 ### Pastebins
-- [PrivateBin](examples/privatebin) - PrivateBin is a minimalist, opensource online pastebin/discussion board where the server has zero knowledge of hosted data.
+- ✨[PrivateBin](examples/privatebin) - PrivateBin is a minimalist, opensource online pastebin/discussion board where the server has zero knowledge of hosted data.
 - [Hemmelig](examples/hemmelig) - Keep your sensitive information out of chat logs, emails, and more with encrypted secrets. Free encrypted secret sharing for everyone!
 
 ### File Sharing / Storage
@@ -211,7 +213,8 @@ docker compose up
 - [MinIO](examples/minio) - MinIO is an object storage server, compatible with Amazon S3 cloud storage service, mainly used for storing unstructured data (such as photos, videos, log files, etc.).
 
 ### Publishing, Writing, Blogging, Hosting
-- [WordPress](wordpress) - WordPress is a free and open-source content management system written in hypertext preprocessor language and paired with a MySQL or MariaDB database with supported HTTPS.
+- ✨[WordPress](wordpress) - WordPress is a free and open-source content management system written in hypertext preprocessor language and paired with a MySQL or MariaDB database with supported HTTPS.
+- ✨[Drupal](drupal) - Drupal is a free and open-source CMS
 - [Ghost](examples/ghost) - Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.
 - [Nginx + PHP](examples/nginx-php) - Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. Combined with PHP, a general-purpose scripting language geared toward web development, server-side functions can be implemented for the webs.
 - [Overleaf](examples/overleaf) - Overleaf is a collaborative cloud-based LaTeX editor used for writing, editing and publishing scientific documents.

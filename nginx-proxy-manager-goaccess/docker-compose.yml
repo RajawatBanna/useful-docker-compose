@@ -1,0 +1,23 @@
+version: '3'
+services:
+  goaccess:
+    image: justsky/goaccess-for-nginxproxymanager:latest
+    container_name: goaccess
+    restart: always
+    environment:
+        - TZ=Asia/Kolkata
+        - PUID=0
+        - PGID=0
+        - SKIP_ARCHIVED_LOGS=False #optional   
+        - BASIC_AUTH=False #optional
+        - BASIC_AUTH_USERNAME=user #optional
+        - BASIC_AUTH_PASSWORD=pass #optional                
+    ports:
+        - '7880:7880'
+    volumes:
+        - ~nginxlogs:/opt/log
+    networks:
+      - nginx-network-default
+networks:
+  nginx-network-default:
+    external: true

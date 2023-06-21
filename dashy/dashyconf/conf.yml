@@ -1,0 +1,145 @@
+appConfig:
+  theme: colorful
+  language: en
+  layout: auto
+  iconSize: medium
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheck: false
+  statusCheckInterval: 0
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: duckduckgo
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: true
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+    hideFooter: false
+  auth:
+    enableGuestAccess: false
+    users: []
+    enableKeycloak: false
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
+pageInfo:
+  title: Rajawat Banna
+  description: Welcome to Rajawat dashboard!
+  navLinks:
+    - title: GitHub
+      path: https://github.com/RajawatBanna
+      target: newtab
+  footerText: ''
+sections:
+  - name: IP & Time
+    widgets:
+      - type: public-ip
+        id: 0_654_publicip
+      - type: clock
+        options:
+          timeZone: Asia/Kolkata
+          format: en-GB
+          hideDate: false
+        id: 1_654_clock
+  - name: CPU Usage
+    widgets:
+      - type: gl-current-cpu
+        options:
+          hostname: https://glances.rajawat.com
+        id: 0_765_glcurrentcpu
+      - type: gl-current-mem
+        options:
+          hostname: https://glances.rajawat.com
+        id: 1_765_glcurrentmem
+    displayData:
+      sortBy: default
+      rows: 10
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+  - name: Cores Utilization
+    widgets:
+      - type: gl-current-cores
+        options:
+          hostname: https://glances.rajawat.com
+        id: 0_1720_glcurrentcores
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+  - name: MyApps
+    items:
+      - title: Portainer
+        url: https://portainer.rajawat.com
+        id: 0_602_portainer
+      - title: PgAdmin
+        url: https://pgadmin.rajawat.com/
+        id: 1_602_pgadmin
+      - title: Dozzle
+        url: https://dozzle.rajawat.com
+        id: 2_602_dozzle
+      - title: Nginx
+        url: https://nginx.rajawat.com
+        id: 3_602_nginx
+      - title: Glances
+        url: https://glances.rajawat.com
+        target: null
+        id: 4_602_glances
+      - title: Traggo
+        url: https://traggo.rajawat.com
+        id: 5_602_traggo
+      - title: DailyNotes
+        url: https://dailynotes.rajawat.com
+        id: 6_602_dailynotes
+      - title: Super Productivity
+        url: https://sp.rajawat.com
+        id: 7_602_superproductivity
+      - title: Adminer
+        url: https://adminer.rajawat.com
+        id: 8_602_adminer
+      - title: Jenkins
+        url: https://jenkins.rajawat.com
+        id: 9_602_jenkins
+      - title: Guacamole
+        url: https://guacamole.rajawat.com
+        id: 10_602_guacamole
+      - title: Php My Admin
+        url: https://phpmyadmin.rajawat.com
+        id: 11_602_phpmyadmin
+      - title: Rabbit MQ
+        url: https://rabbitmq.rajawat.com
+        id: 12_602_rabbitmq
+      - title: Redis
+        url: https://redis.rajawat.com
+        id: 13_602_redis
+      - title: Bin Share
+        url: https:.//bin.rajawat.com
+        id: 14_602_binshare
+      - title: Wordpress
+        url: https://wp.rajawat.com
+        id: 15_602_wordpress
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false

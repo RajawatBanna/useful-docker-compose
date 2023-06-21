@@ -1,12 +1,12 @@
 <div align="center" width="100%">
-    <h1>Portainer-CE</h1>
-    <p>Lightweight service delivery platform for containerized applications</p>
+    <h1>Go Access For Nginx Proxy Manager</h1>
+    <p>Awesome dashboard for logs of nginx proxy manager</p>
 </div>
 
-🐳 [Docker-Hub](https://hub.docker.com/r/portainer/portainer-ce)
+🐳 [Docker-Hub](https://hub.docker.com/r/justsky/goaccess-for-nginxproxymanager)
 #
 
-![alt text](../showcase/portainer.jpeg "Portainer")
+![alt text](../showcase/goaccess.jpeg "Go access")
 
 ### Running a sample
 
@@ -26,10 +26,10 @@ To stop and remove all containers with Volume of the sample application run:
 docker-compose down -v
 ```
 
-## ✨ Dashy Config
+## ✨ Nginx Proxy Manager Go Access Config
 #
 ```console
-We have mounted the volume in portainer_data.
+Mount the /opt/log of this container to the /data/logs of nging proxy manager
 ```
 
 
