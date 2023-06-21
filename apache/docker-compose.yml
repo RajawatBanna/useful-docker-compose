@@ -6,7 +6,7 @@ services:
     ports:
       - "9999:80"
     volumes:
-      - ./lks:/usr/local/apache2/htdocs/
+      - ./htdocs:/usr/local/apache2/htdocs/
     networks:
       - nginx-network-default
 networks:

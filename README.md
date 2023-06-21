@@ -90,9 +90,17 @@ docker compose up
 - [Openspeedtest](examples/openspeedtest) - A free and open-source HTML5 network performance estimation tool written in vanilla JavaScript and only uses built-in web APIs like XHR, HTML, CSS, JS and SVG.
 - [WatchYourLAN](examples/watchyourlan) - Lightweight network IP scanner with web GUI.
 
+### Web Servers
+
+- ✨[Tomcat](tomcat) - Tomcat web server
+- ✨[Apache](apache) - Apache web server
+- [Weblogic](weblogic) - Weblogic web server
+- [nginx](nginx) - nginx web server
+- [jetty](jetty) - jetty web server
+
 ### Databases
 
-- [PGSQL](pgsql) - The PostgreSQL database server with PgAdmin client.
+- ✨[PGSQL](pgsql) - The PostgreSQL database server with PgAdmin client.
 - [MYSQL](mysql) - MySQL database server with Php My Admin client.
 - [MSSQL](mssql) - Microsoft Sql server database.
 - [ORACLE-XE](oracleDB) - Oracle Database XE (21c, 18c, 11g). See gvenzl/oracle-free for Oracle Database 23c Free.
