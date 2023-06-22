@@ -26,7 +26,7 @@ To stop and remove all containers with Volume of the sample application run:
 docker-compose down -v
 ```
 
-## ✨ Dashy Config
+## ✨ Portainer Config
 #
 ```console
 We have mounted the volume in portainer_data.
