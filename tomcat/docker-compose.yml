@@ -1,10 +1,18 @@
+version: "3"
+
 services:
-  mo-tomcat:
-    image: tomcat:9-jdk8-openjdk-slim-buster
-    container_name: tomcat9
+  moas-cloud:
+    image: tomcat:8-jdk8-openjdk-slim-buster
+    container_name: tomcat8
     ports:
       - "8080:8080"
+      - "1812:1812/udp"
+      - "1813:1813/udp"
+      - "8000:8000"
     restart: unless-stopped
+    tty: true
+    volumes:
+      - ./webapps:/usr/local/tomcat/webapps/
     networks: 
       - nginx-network-default
 networks:
