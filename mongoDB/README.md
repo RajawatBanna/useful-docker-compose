@@ -1,6 +1,6 @@
 <div align="center" width="100%">
-    <h1>MSSQL Docker Guide</h1>
-    <p>Some basic commands to use mssql docker container</p>
+    <h1>MongoDB Docker Guide</h1>
+    <p>Some basic commands to use MongoDB docker container</p>
 </div>
 
 ## ✨Prerequisites
@@ -30,48 +30,48 @@ To stop and remove all containers with Volume of the sample application run:
 docker-compose down -v
 ```
 
-## ✨ MSSQL Config
+## ✨ MongoDB Config
 #
->- username  - **sa**
->- password - **Passw0rd.**
->- port - **1433**
+>- username  - **root**
+>- password - **example**
+>- port - **27017**
+
+## ✨ Mongo-Express Client
+
+Excess the web based mongodb Client on port 8081 to create,view, update and delete the database
 
 
-## 🎓 MSSQL Commands
+## 🎓 MongoDB Commands
 #
 
 1. Run the following command to open the mssql client terminal and enter the password (Passw0rd.) when prompted.
 
 ```console
-docker exec -it mssql_container /opt/mssql-tools/bin/sqlcmd -S localhost -U sa
+docker exec -it mongo_db mongosh --username root --password example
 ```
 
 2. To See list of database:
 
 ```console
-select name from sys.databases;
-GO
+show dbs;
 ```
 
 3. Create database command
 
 ```console
-create database lks;
-GO
+use lks;
 ```
 
 4. Change database context command
 
 ```console
 use lks;
-GO
 ```
 
 5. Create database command
 
 ```console
 drop database lks;
-GO
 ```
 
 
