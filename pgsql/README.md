@@ -82,6 +82,20 @@ drop database lks;
 quit
 ```
 
+7. To Take the database backup;
+```console
+pg_dump -U postgres "DbName" > dbbackup
+or
+pg_dump -U postgres "DbName" > dbbackup.sql
+```
+
+8. To restore the database backup;
+```console
+psql -U postgres "DbName" < dbbackup
+or
+psql -U postgres "DbName" < dbbackup.sql
+```
+
 ## Author
 
 ## 👤 RajawatBanna
