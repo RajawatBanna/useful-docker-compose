@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-  moas-cloud:
-    image: tomcat:8-jdk8-openjdk-slim-buster
-    container_name: tomcat8
+  tomcat:
+    image: tomcat:9.0-jdk8-corretto
+    container_name: tomcat9
     ports:
       - "8080:8080"
       - "1812:1812/udp"
