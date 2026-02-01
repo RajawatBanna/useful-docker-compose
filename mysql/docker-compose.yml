@@ -24,6 +24,8 @@ services:
       - 8191:80
     networks:
       - nginx-network-default
+    depends_on:
+      - db 
 volumes:
   mysql-db-data:
 networks:
